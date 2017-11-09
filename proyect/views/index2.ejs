@@ -1,0 +1,15 @@
+<h3>Respuesta </h3>
+<ul>
+<% prueba.forEach(function(pruebas){ %>
+	<li>
+	  <h4><%= pruebas.value.name %></h4>
+            <ul>
+		<%= pruebas.key.nombre %>
+                <%= pruebas.key.apellido %>
+		<p> Codigo : </p>  <li><%= pruebas.key.codigo %></li>
+		<p> Ciclo  : </p> <li><%= pruebas.key.ciclo %></li>
+		<p> Facultad : </p> <li><%= pruebas.value %></li>
+	    </ul>
+	</li>
+<% }); %>
+</ul>
